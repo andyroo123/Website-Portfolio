@@ -1,8 +1,7 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Aug 01 2021 21:25:07 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Sep 06 2021 02:21:53 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61043ec9de455371bbb6f0b3" data-wf-site="6101a781cd63c50a1855f7c7">
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <title>Website Portfolio</title>
   <meta content="Website Portfolio" property="og:title">
@@ -48,27 +47,15 @@
     </div>
   </div>
   <div class="section description-section wf-section">
-    <div class="container w-container">
-      <div class="name">Visualizer</div>
-    </div>
+    <div class="container w-container"></div>
+    <h1>This is the project section</h1>
   </div>
-  <div class="whole-map">
-    <div class="map-button-group">
-      <button onclick="startAlgo()">Start</button>
-      <div class="dropdown">
-        <button onclick="dropDown()" class="dropbtn">Algorithm</button>
-        <div id="myDropdown" class="dropdown-content">
-          <button class="drop" id="AStarBtn" onclick="setAStarMode()">A-Star</button>
-          <button class="drop" id="DijkstraBtn" onclick="setDijkstraMode()">Dijkstra's</button>
-        </div>
-      </div>
-      <button class = "pathBtn" id="wallBtn" onclick="initWallMode()">Wall Mode</button>
-      <button class = "pathBtn" id = "chkPtBtn" onclick="initChkPtMode()">Add Check Points</button>
-      <button class = "pathBtn" id = "showVisited" onclick="changeVisualNodes()">Disable Visual Nodes</button>
-      <button class = "pathBtn" id = "clearBtn" onclick="clearWallsAndChkPts()">Clear</button>
-    </div>
-    <div id="map">
-      <script src="js/pathfinding_visualizer.js"></script>
+  <div class="wf-section">
+    <div class="container pathing-finding-algo w-container">
+      <div class="name">Description</div>
+      <h1 class="heading-2">Project Tutorial</h1>
+      <h1 class="heading-4">Welcome to my pathfinding algorithm visualization tool!<br>Below you will be able to see how to operate the tool, and learn about some of its features!<br></h1>
+      <p class="project-paragraph alogorithm-desc">Welcome to my pathfinding algorithm visualization tool! Below you will be able to see how to operate the tool, and learn about some of its features!<br><br>In order to create a start and end point simple left click on any node to make it a starting point and right click anywhere to create an ending point.<br>At this point one can simply click &quot;Start&quot; in order to find the shortest path between the two nodes.<br><br>The next button in the list is &quot;Algorithm&quot;, this drop down menu will allow one to select which pathfinding algorithm they wish to use. By default this is set to be the A-Star algorithm.<br>‍<br>By click the &quot;Wall Mode&quot; button one can enter wall creation mode, this will allow you to click and drag in order to create walls across the map that the algorithm will avoid. Click and dragging on previously created walls will allow one to delete walls that they have created. In order to exit wall mode, simply click on the &quot;Wall Mode&quot; button again.<br><br>A unique feature to this tool is the ability to create check points across the map. To add check points, click on the &quot;Add Check Points&quot; button to enter the add check points mode. In this mode, one can click on nodes to make the checkpoints. Making a node a check point will force the algorithm to visit this node before proceeding to the end point, one can make as many check points as they wish.<br><br>The final feature of this tool, is the ability to turn of visual nodes. Normally there are animations to show which nodes the algorithm is considering, however at times this can be a lengthy process to wait for animations. Therefore one can simply click on the &quot;Disable Visual Nodes&quot; buttons to turn off animations and drastically speed up the algorithm.<br></p>
     </div>
   </div>
   <div class="section form wf-section">
